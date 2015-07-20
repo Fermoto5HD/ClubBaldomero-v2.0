@@ -1,0 +1,101 @@
+p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size:100%;
+    vertical-align: baseline;
+}
+ 
+label p{
+    color: #333;
+    text-decoration: none;
+    display:block;
+    margin:0px 0;
+    font-size:1.25em;
+}
+ 
+#pagina-contacto{
+    margin: 0px;
+    overflow: hidden;
+    min-height: 100px;
+    color: rgb(255, 255, 255);
+}
+ 
+.c_input{
+    padding: 3px;
+}
+ 
+#c_form{
+    margin: 25px;
+}
+ 
+.c_input, #c_form textarea{
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+ 
+input:focus, textarea:focus{
+    outline: none;
+}
+ 
+#c_form textarea{
+    min-height: 100px;
+    resize: none;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+}
+ 
+#c_enviar{
+    padding: 4px;
+}
+ 
+#bottom_container{
+    overflow: hidden;
+}
+ 
+#c_information{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 0 4px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(0, 195, 0);
+}
+
+.correo-error{background: rgba(225, 0, 0, 0.5); border-radius: 5px; padding: 10px; margin-top: 10px; margin-bottom: 20px; max-width: 700px;}
+.correo-error-titulo{font-size: 20px; line-height: 20px;}
+.correo-error-item{font-size: 14px; line-height: 20px;}
+.hide{display:none;}
+ 
+ 
+ 
+/*------------------------Boton enviar------------------------*/
+ 
+.btn-b, .btn-b:active {
+    width: 100%;
+    max-width: 700px;
+    margin-right: 5px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgb(200, 200, 200);
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+ 
+.btn-b:hover {
+    color: rgb(255, 255, 255);
+}

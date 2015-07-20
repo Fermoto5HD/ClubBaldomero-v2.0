@@ -1,0 +1,27 @@
+/* Cuerpo del sitio */
+	#Estructura_Cuerpo{width: 100%; min-height: 400px; vertical-align: top;}
+	#estructura-cuerpo404{width: 100%; min-height: 350px; vertical-align: top;}
+	#Cuerpo_Titulo{width: calc(100% - 20px); margin-bottom: 20px; background: rgba(0, 0, 0, 0.15); font-size: 25px; padding: 10px;}
+		.titulo-alineacion{width: calc(100% - 25px); font-size: 14px; padding-left: 25px;}
+		.titulo{font-family: "Open Sans", Tahoma, Sans-serif !important; display: inline-block; padding: 10px; font-size: 24px;}
+	h1{text-align: left; margin-bottom: 20px;}
+	p{text-align: left; margin-top: 10px; margin-bottom: 10px;}
+
+			/* Error */
+				#error-titulo{margin-top: 150px; font-size: 38px;}
+				#error-descripcion{margin-top: 10px; font-size: 18px;}
+
+			/* Home */
+				.home-cover{width: 100%; height: 40%; vertical-align: bottom; font-size: 55px; color: rgb(200, 200, 200);}
+					@media (max-width: 639px) {.cover-espacio{height: 50%;} .home-cover{font-size: 44px;}}
+					@media (max-width: 479px) {.cover-espacio{height: 75%;} .home-cover{font-size: 30px;}}
+					.cover-texto{color: rgb(200, 200, 200); padding-bottom: 20px;}
+				.home-bloque{display: inline-block; padding: 10px; vertical-align: top;}
+				/* Desde 640px de ancho */
+				@media (min-width: 640px) {.home-bloque{width: 45.5%;}}
+				/* Hasta 639px de ancho */
+				@media (max-width: 639px) {.home-bloque{width: 93.5%;}}
+
+				/* Contacto */
+					input, textarea {width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.25);}
+					#boton-contacto{padding: 10px; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(0, 0, 0, 0.25);}

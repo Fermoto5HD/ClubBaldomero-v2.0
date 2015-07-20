@@ -1,0 +1,272 @@
+// Fuentes tipográficas 
+$CadenaFuentes: "'Museo Sans', 'Tahoma', 'Verdana', 'Arial', 'Sans-serif'";
+$Open: "'Open Sans', " + $CadenaFuentes;
+$Regular: "'Gotham', " + $CadenaFuentes;
+$Light: "'Gotham Light', " + $CadenaFuentes;
+
+/* Fuentes tipográficas */
+@font-face {
+	font:{
+		family:"Open Sans";
+		font-weight: normal;
+		font-style: normal;
+	}
+	src:url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+	font:{
+		family:"Gotham";
+		font-weight: normal;
+		font-style: normal;
+	}
+	src:url("../fonts/Gotham.ttf") format("truetype");
+}
+@font-face {
+	font:{
+		family:"Gotham Light";
+		font-weight: normal;
+		font-style: normal;
+	}
+	src:url("../fonts/Gotham_Book.ttf") format("truetype");
+}
+
+/* Reset, declaración tipográfica y bloqueo de selección */
+*{
+	margin: 0; padding: 0;
+	font-family: #{$Regular};
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Centrar elementos en resoluciones altas */
+@media (min-width: 640px) {
+	.encuadre{
+		width: 100%;
+		max-width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* Párrafos */
+p{
+	font-family: #{$Light};
+	text-align: left; 
+	margin: {
+		top: 10px; 
+		bottom: 10px;
+	}
+}
+
+/* Código preprocesado */
+pre{
+	padding: 10px; 
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	font-family: monospace;
+	overflow: scroll;
+	@media (min-width: 640px) {
+		overflow: hidden;
+	}
+}
+/* Contenedor de "pre" */
+.cuadro-ejemplo{
+	background-color: rgba(200, 150, 0, 0.25);
+	border-radius: 4px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+/* Input y textarea */
+input, textarea {
+padding: 5px; 
+border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Botones */
+button{
+	padding: 10px 15px;
+	margin: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	background-color: rgb(200, 200, 200);
+	cursor: pointer;
+}
+
+/* Listas */
+ol, ul{padding-left: 24px;}
+
+/* H1 */
+h1{
+	padding-top: 15px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+/* Body */
+	body{background-color: rgb(20, 20, 20);}
+
+/* Artículo */
+	article{margin: 10px;}
+
+/* Contenido principal */
+	main{background-color: rgb(255, 255, 255);}
+
+
+//Ajax
+/* Carga del sitio (aparece y desaparece por Ajax) */
+#BA-carga{
+	width: 100%; height: 145px; 
+	background: {
+		image: url('../img/BA.png'); 
+		repeat: no-repeat; 
+		position: center;
+	}
+}
+#pantalla-carga{
+	width: 100%; 
+	background: rgb(190, 190, 190); 
+	padding: {
+		top: 10%;
+		bottom: 10%;
+	}
+	text-align: center;
+}
+
+//Header
+/* Encabezado */
+#estructura-encabezado-navegacion{
+	width: 100%; 
+	background: linear-gradient(to bottom, #FFD300 0%, #FFBC00 100%); 
+	padding-bottom: 2.5px; 
+	transition-duration: 1s;
+}
+/* Marca Buenos Aires Ciudad */	
+#encabezado-BAciudad{
+	width: 255px;
+	height: 45px;
+	margin:{
+		left: 30px;
+		bottom: 8px;
+	}
+	padding: 0px; 
+	padding-top: 22px;
+	background: {
+		image: url('../img/Encabezado_BACiudad.svg'); 
+		size: contain; 
+		repeat: no-repeat; 
+		position: center; 
+	}
+	cursor: pointer;
+	position: relative;
+}
+
+//Navegación
+/* Navegación */
+.encabezado-navegacion{
+	width: calc(100% - 25px); 
+	font-size: 14px; 
+	padding-left: 25px;
+}
+/* Oculto por defecto */
+#navegacion{
+	@media (max-width: 639px) {
+		display: none;
+	}
+}
+/* Items */
+.navegacion-item{
+	font-family: #{$Open};
+	display: inline-block; 
+	border-radius: 5px; 
+	padding: 10px; 
+	color: rgb(95, 90, 0); 
+	transition-duration: 0.5s; cursor: pointer;
+	@media (max-width: 639px) {
+		width: calc(100% - 40px); 
+		display: block;
+	}
+	&:hover{
+	background: #FFD300; 
+	color: rgb(41, 34, 2);
+	}
+}
+/* Seleccionado */
+.Seleccionado{color: rgb(255, 255, 255) !important;}
+
+/* Botón menú responsive */
+.menu-responsive { 
+	display: none;
+	@media (max-width: 639px) {
+		position: relative;
+		display: block;
+		margin: 10px; 
+		border: {
+			width: 1px;
+			style: solid;
+			color: #D7A721; 
+			radius: 4px;
+		}
+		color: #5F4600;
+		font-size: 12px; 
+		cursor: pointer;
+		letter-spacing: -0.5px;
+		background: {
+			image: linear-gradient(to bottom, #FFD300 0%, #FFBC00 100%);
+			color: #FFBC00;
+		}
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.075), 0px -2px 0px rgba(0, 0, 0, 0.075) inset;
+		&:active{
+			background:{
+				image: linear-gradient(to bottom, #EDC400 0%, #EDAF00 100%);
+			color: #EDAF00;
+		}
+		border-color: #C89B1F;
+		color: #735500;
+		}
+		& div{
+			padding: 7.5px;
+		}
+	}
+}
+
+
+
+
+
+//Footer 
+/* Footer */
+footer{
+	width: 100%; 
+	padding-bottom: 20px; 
+	background: rgb(20, 20, 20); 
+	color: rgb(255, 255, 255); 
+	font-size: 10px; 
+	text-align: center; 
+}
+/* Marca BA Ciudad - En todo estás vos */
+#footer-BA{
+	width: 100%; 
+	height: 145px; 
+	background: {
+		image: url('../img/Footer_BA.svg'); 
+		repeat: no-repeat; 
+		position: center;
+	}
+}
+/* Items del footer */
+.footer-item{
+	display: inline-block; 
+	padding: 10px; 
+	color: rgba(255, 255, 255, 0.8); 
+	transition-duration: 0.5s; 
+	cursor: pointer;
+
+	@media (max-width: 479px) {
+		width: calc(100% - 20px); display: block;
+	}
+	&:hover{color: rgb(255, 255, 255);}
+}
+	
+	

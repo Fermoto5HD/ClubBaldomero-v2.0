@@ -1,0 +1,68 @@
+/* Portadas */
+.cover {
+  width: 100%;
+  height: 40%;
+  height: auto;
+  vertical-align: bottom;
+  font-size: 55px;
+  color: #c8c8c8;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../img/Home_Baldomero.png");
+  font-size: 35px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 639px) {
+    .cover {
+      font-size: 44px; } }
+  @media (max-width: 479px) {
+    .cover {
+      font-size: 30px; } }
+  .cover#home {
+    background-image: url("../img/ProgramaTuFuturo.png"); }
+  .cover#club {
+    background-image: url("../img/Cover-club.jpg"); }
+  .cover#proyectos {
+    background-image: url("../img/Cover-proyectos.jpg"); }
+  .cover p {
+    font-size: 21px;
+    margin-bottom: 125px;
+    line-height: 24px; }
+    .cover p#contacto {
+      margin-bottom: 0px; }
+
+.cover-degrade {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  vertical-align: bottom; }
+  @media (max-width: 479px) {
+    .cover-degrade {
+      overflow: scroll; } }
+  .cover-degrade#error404 {
+    background: linear-gradient(to top, #141414 0%, transparent 100%); }
+
+.cover-texto {
+  padding-top: 75px;
+  padding-bottom: 56px;
+  background: transparent;
+  font-size: 64px;
+  line-height: 64px;
+  color: white !important;
+  margin-left: 30px;
+  margin-right: 30px; }
+  @media (max-width: 479px) {
+    .cover-texto {
+      font-size: 50px;
+      line-height: 50px; } }
+
+.cover-texto-parrafo, .cover-texto p {
+  font-size: 21px;
+  margin-bottom: 125px;
+  line-height: 24px;
+  font-family: "Open Sans", "Tahoma", "Sans-serif" !important; }
+  .cover-texto-parrafo#contacto, .cover-texto p#contacto {
+    margin-bottom: 0px; }
+  .cover-texto-parrafo#error404, .cover-texto p#error404 {
+    text-align: center; }
